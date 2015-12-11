@@ -1,2 +1,2 @@
 # scripts-linux
-Scripts linux d'utilité notable
+Scripts linux d'utilite notable
