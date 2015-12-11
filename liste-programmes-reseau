@@ -1,0 +1,1 @@
+while read line; do pid=$(echo "$line"|tr -s ' '|cut -d' ' -f2); ports=$(netstat -tunap|grep "$pid/"); if [ $? = 0 ]; then echo "$line"; echo "$ports"; printf "\n"; fi; done < <(ps aux)
